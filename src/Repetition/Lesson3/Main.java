@@ -11,23 +11,23 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         thread();
 
-//        for (int i = 0; i < 5; i++) {
-//            Thread t1 = new Thread(() -> {
-//                System.out.println("ping");
-//                marker = true;
-//            });
-//
-//
-//            Thread t2 = new Thread(() -> {
-//                System.out.println("pong");
-//                marker = false;
-//            });
-//
-//            t1.start();
-//            t2.start();
-//            t1.join();
-//            t2.join();
-//        }
+        for (int i = 0; i < 5; i++) {
+            Thread t1 = new Thread(() -> {
+                System.out.println("ping");
+                marker = true;
+            });
+
+
+            Thread t2 = new Thread(() -> {
+                System.out.println("pong");
+                marker = false;
+            });
+
+            t1.start();
+            t2.start();
+            t1.join();
+            t2.join();
+        }
 
 
 
